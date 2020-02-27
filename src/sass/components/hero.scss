@@ -1,0 +1,65 @@
+.hero {
+  text-align: center;
+}
+
+.hero__title {
+  margin-bottom: 28px;
+}
+
+.hero__title--first-line {
+  text-transform: uppercase;
+  font-family: $general-font;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: $white-color;
+}
+
+.hero__title--ampersand {
+  text-transform: uppercase;
+  font-family: $general-font;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: $accent-color;
+}
+
+.hero__title--second-line {
+  text-transform: uppercase;
+  font-family: $rubric-font;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: $white-color;
+}
+
+.hero__title--sale {
+  text-transform: uppercase;
+  font-family: $rubric-font;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: $accent-color;
+}
+
+.hero__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: $general-font;
+  color: $white-color;
+  font-weight: 300;
+  padding: 16px 30px;
+  width: 120px;
+  min-height: 40px;
+  border: 1px solid $white-color;
+  cursor: pointer;
+  transition: background-color 250ms $animation;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    border: none;
+  }
+}

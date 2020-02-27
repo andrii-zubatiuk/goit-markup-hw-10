@@ -1,0 +1,85 @@
+.user-header {
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  background-color: $accent-color;
+  height: 50px;
+  padding-right: 170px;
+  padding-left: 170px;
+}
+
+.user-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.tel-link {
+  text-decoration: none;
+  font-family: $rubric-font;
+  font-size: 14px;
+  line-height: 0.785;
+  font-weight: 300;
+  color: $white-color;
+  margin-right: 70px;
+  display: flex;
+  align-items: center;
+  transform: scale(1);
+  transition: transform 150ms linear;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+}
+
+.tel-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  fill: $white-color;
+}
+
+.mail-link {
+  text-decoration: none;
+  font-family: $rubric-font;
+  font-size: 14px;
+  line-height: 0.785;
+  font-weight: 300;
+  color: $white-color;
+  display: flex;
+  align-items: center;
+  transform: scale(1);
+  transition: transform 150ms linear;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+}
+
+.mail-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  fill: $white-color;
+}
+
+.user-nav__link {
+  display: block;
+  text-decoration: none;
+  font-family: $rubric-font;
+  font-size: 14px;
+  line-height: 0.785;
+  font-weight: 300;
+  color: $white-color;
+  padding: 5px 18px;
+  transform: scale(1);
+  transition: transform 150ms linear;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+}

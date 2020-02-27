@@ -1,0 +1,21 @@
+.section-title {
+  font-size: 48px;
+  line-height: 0.666;
+  font-family: $general-font;
+  color: #515151;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 90px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::after {
+    content: '';
+    width: 164px;
+    height: 15px;
+    background-image: url(../images/icons/title-underline.png);
+    margin-top: 30px;
+  }
+}

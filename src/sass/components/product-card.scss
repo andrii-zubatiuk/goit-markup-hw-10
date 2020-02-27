@@ -1,0 +1,110 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product__card {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc(25% - 22.5px);
+  flex-grow: 0;
+  overflow: hidden;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  &:nth-last-child(-n + 4) {
+    margin-bottom: 0;
+  }
+
+  &:hover .product__name,
+  &:focus .product__name {
+    background-color: $accent-color;
+  }
+
+  &:hover .product__price,
+  &:focus .product__price {
+    background-color: #7fd9c7;
+  }
+
+  &:hover .product__overlay,
+  &:focus .product__overlay {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  &:hover .product__action,
+  &:focus .product__action {
+    opacity: 1;
+  }
+}
+
+.product__card .product__cover {
+  position: relative;
+}
+
+.product__card .product__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  width: 100%;
+  height: 322px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 10px solid rgba(255, 255, 255, 0.8);
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 250ms linear;
+}
+
+.product__name {
+  font-size: 18px;
+  line-height: 1.777;
+  font-family: $general-font;
+  font-weight: 900;
+  color: $white-color;
+  background-color: #323232;
+  text-transform: uppercase;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 14px;
+  flex-grow: 1;
+  transition: background-color 250ms $animation;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.product__price {
+  font-size: 18px;
+  line-height: 1.777;
+  font-family: $general-font;
+  font-weight: 900;
+  color: $white-color;
+  background-color: #8c8c8c;
+  text-transform: uppercase;
+  padding: 14px;
+  transition: background-color 250ms $animation;
+}
+
+.product__info {
+  display: flex;
+}
+
+.product__link {
+  text-decoration: none;
+
+  &:hover .product__name,
+  &:focus .product__name {
+    background-color: $accent-color;
+  }
+
+  &:hover .product__price,
+  &:focus .product__price {
+    background-color: #7fd9c7;
+  }
+}
